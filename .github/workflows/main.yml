@@ -1,7 +1,10 @@
 on:
   workflow_dispatch:
 jobs:
-  runs_test:
-    runs-on: ubuntu-latest'
-    steps:
-      - uses: khabdrick/Actions-for-Python-testing/.github/workflows/main.yml@main
+  run_ubuntu:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v2
+  run_test:
+      uses: khabdrick/Actions-for-Python-testing/.github/workflows/main.yml@main
+ 
