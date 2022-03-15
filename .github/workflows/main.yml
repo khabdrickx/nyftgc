@@ -1,4 +1,7 @@
+on:
+  workflow_dispatch:
 jobs:
-  build:
-  uses:
-    khabdrick/Actions-for-Python-testing/.github/workflows/main.yml@main
+  runs_test:
+    runs-on: ubuntu-latest'
+    steps:
+      - uses: khabdrick/Actions-for-Python-testing/.github/workflows/main.yml@main
